@@ -1,0 +1,13 @@
+name: NiceChat
+main: com.knightgost.nicechat.NiceChat
+version: 1.0.0
+api-version: 1.20
+author: KnightGost (virendraxd)
+description: Replaces bad words with nice words — spread positivity!
+
+commands:
+  nicechat:
+    description: Manage NiceChat plugin
+    usage: /<command> <reload>
+    permission: nicechat.admin
+    permission-message: You don't have permission to use this command!
