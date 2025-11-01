@@ -1,13 +1,13 @@
-package com.knightgost.nicechat;
+package com.knightgost.politechat;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 public class ChatListener implements Listener {
-   private final NiceChat plugin;
+   private final PoliteChat plugin;
 
-   public ChatListener(NiceChat plugin) {
+   public ChatListener(PoliteChat plugin) {
       this.plugin = plugin;
    }
 

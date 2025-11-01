@@ -1,23 +1,24 @@
-package com.knightgost.nicechat;
+package com.knightgost.politechat;
 
 import java.util.Arrays;
+
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-public class NiceChatCommand implements CommandExecutor {
-   private final NiceChat plugin;
+public class PoliteChatCommand implements CommandExecutor {
+   private final PoliteChat plugin;
 
-   public NiceChatCommand(NiceChat plugin) {
+   public PoliteChatCommand(PoliteChat plugin) {
       this.plugin = plugin;
    }
 
    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
       if (args.length == 0) {
-         sender.sendMessage("§aNiceChat Plugin Commands:");
-         sender.sendMessage("§e/nicechat reload §7- Reload config");
-         sender.sendMessage("§e/nicechat add <badword> <niceword> §7- Add new replacement");
-         sender.sendMessage("§e/nicechat remove <badword> §7- Remove replacement");
+         sender.sendMessage("PoliteChat Plugin Commands:");
+         sender.sendMessage("§e/politechat reload §7- Reload config");
+         sender.sendMessage("§e/politechat add <badword> <niceword> §7- Add new replacement");
+         sender.sendMessage("§e/politechat remove <badword> §7- Remove replacement");
          return true;
       } else {
          String var5 = args[0].toLowerCase();
@@ -43,12 +44,12 @@ public class NiceChatCommand implements CommandExecutor {
          switch(var6) {
          case 0:
             this.plugin.reloadPluginConfig();
-            sender.sendMessage("§a✅ NiceChat config.yml reloaded successfully!");
+            sender.sendMessage("§a✅ PoliteChat config.yml reloaded successfully!");
             this.plugin.getLogger().info("Config reloaded by " + sender.getName());
             break;
          case 1:
             if (args.length < 3) {
-               sender.sendMessage("§cUsage: /nicechat add <badword> <niceword>");
+               sender.sendMessage("§cUsage: /politechat add <badword> <niceword>");
                return true;
             }
 
@@ -61,7 +62,7 @@ public class NiceChatCommand implements CommandExecutor {
             break;
          case 2:
             if (args.length != 2) {
-               sender.sendMessage("§cUsage: /nicechat remove <badword>");
+               sender.sendMessage("§cUsage: /politechat remove <badword>");
                return true;
             }
 
@@ -76,7 +77,7 @@ public class NiceChatCommand implements CommandExecutor {
             }
             break;
          default:
-            sender.sendMessage("§cUnknown subcommand. Use /nicechat reload | add | remove");
+            sender.sendMessage("§cUnknown subcommand. Use /politechat reload | add | remove");
          }
 
          return true;

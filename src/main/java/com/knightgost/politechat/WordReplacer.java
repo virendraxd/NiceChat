@@ -1,4 +1,4 @@
-package com.knightgost.nicechat;
+package com.knightgost.politechat;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -8,11 +8,11 @@ import java.util.Map.Entry;
 public class WordReplacer {
    private final Map<String, String> replacements = new HashMap();
 
-   public WordReplacer(NiceChat plugin) {
+   public WordReplacer(PoliteChat plugin) {
       this.loadConfig(plugin);
    }
 
-   private void loadConfig(NiceChat plugin) {
+   private void loadConfig(PoliteChat plugin) {
       if (plugin.getConfig().getBoolean("enabled", true)) {
          if (plugin.getConfig().contains("words")) {
             Iterator var2 = plugin.getConfig().getConfigurationSection("words").getKeys(false).iterator();

@@ -1,9 +1,9 @@
-package com.knightgost.nicechat;
+package com.knightgost.politechat;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class NiceChat extends JavaPlugin {
-   private static NiceChat instance;
+public class PoliteChat extends JavaPlugin {
+   private static PoliteChat instance;
    private WordReplacer wordReplacer;
    private ChatListener chatListener;
 
@@ -13,17 +13,17 @@ public class NiceChat extends JavaPlugin {
       this.loadWordReplacer();
       this.chatListener = new ChatListener(this);
       this.getServer().getPluginManager().registerEvents(this.chatListener, this);
-      if (this.getCommand("nicechat") != null) {
-         this.getCommand("nicechat").setExecutor(new NiceChatCommand(this));
+      if (this.getCommand("politechat") != null) {
+         this.getCommand("politechat").setExecutor(new PoliteChatCommand(this));
       } else {
-         this.getLogger().warning("Command 'nicechat' not found in plugin.yml");
+         this.getLogger().warning("Command 'politechat' not found in plugin.yml");
       }
 
-      this.getLogger().info("NiceChat enabled — spreading positivity!");
+      this.getLogger().info("PoliteChat enabled — spreading positivity!");
    }
 
    public void onDisable() {
-      this.getLogger().info("NiceChat disabled — stay kind!");
+      this.getLogger().info("PoliteChat disabled — stay kind!");
    }
 
    public void loadWordReplacer() {
@@ -39,7 +39,7 @@ public class NiceChat extends JavaPlugin {
       return this.wordReplacer;
    }
 
-   public static NiceChat getInstance() {
+   public static PoliteChat getInstance() {
       return instance;
    }
 }

@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.knightgost</groupId>
-    <artifactId>NiceChat</artifactId>
+    <artifactId>PoliteChat</artifactId>
     <version>1.0.0</version>
-    <name>NiceChat</name>
+    <name>PoliteChat</name>
 
     <properties>
         <java.version>17</java.version>
