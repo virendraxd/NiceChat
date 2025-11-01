@@ -19,20 +19,18 @@ PoliteChat is a Minecraft plugin that enhances the in-game chat system by allowi
 
 
 ## ⚙️ Commands
-| Command            | Description                             |
-| ------------------ | --------------------------------------- |
+| Command              | Description                             |
+| -------------------- | --------------------------------------- |
 | `/politechat reload` | Reloads the plugin configuration.       |
 | `/politechat add`    | Adds a new replacement word on the fly. |
 | `/politechat remove` | Removes a word replacement dynamically. |
 
 
 ## 🧾 Permissions
-| Permission        | Description                     |
-| ----------------- | ------------------------------- |
-| `politechat.reload` | Allows reloading the plugin.    |
-| `politechat.add`    | Allows adding new replacements. |
-| `politechat.remove` | Allows removing replacements.   |
-| `politechat.bypass` | Bypasses the word filter.       |
+| Permission         | Description                |
+| ------------------ | -------------------------- |
+| `politechat.admin` | Allows use of the plugin.  |
+
 
 
 ## ⚠️ Word Replacement Warning
