@@ -1,0 +1,12 @@
+# Example NiceChat Configuration
+
+words:
+  # English examples
+  idiot: genius
+  stupid: brilliant one
+  noob: pro learner
+
+  # Hindi examples
+  bakwas: awesome
+  gadha: smart one
+  pagal: creative mind

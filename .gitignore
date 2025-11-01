@@ -35,3 +35,7 @@ out/
 
 # Windows
 Thumbs.db
+
+# Ignore configs with sensitive content
+src/main/resources/config.yml
+plugins/NiceChat/config.yml
